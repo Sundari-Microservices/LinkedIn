@@ -1,0 +1,27 @@
+Get => /companies
+Put => /companies/{id}
+post => /companies
+delete => /companies/{id}
+get => /companies/{id}
+
+Company entity:
+==============
+
+fields: {companyId, companyName, companyDescription, companyLocation, List<job> jobs}
+
+========================================================================
+
+Reviews:
+=======
+
+Get => /companies/{companyId}/reviews /*gets the review for particular company by id*/
+post => /companies/{companyId}/reviews  /*posts the review for particular company by id*/
+Get => /companies/{companyId}/reviews/{reviewId} /*gets a particular review for particular company by id*/
+Put => /companies/{companyId}/reviews/{reviewId} /*puts a particular review for particular company by id*/
+delete => /companies/{companyId}/reviews/{reviewId} /*delete a particular review for particular company by id*/
+
+
+Review entity:
+==============
+
+fields: {reviewId, companyName, companyLocation}
